@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="navbar.js"></script>
+</head>
+<style>
+    body {
+        background-color: #f8f9fa;
+        color: #212529;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .dark-mode {
+        background-color: #121212;
+        color: #f1f1f1;
+    }
+
+    .dark-mode .card {
+        background-color: #1e1e1e;
+        color: #e6eef6;
+        border: 1px solid #333;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    footer {
+        margin-top: 40px;
+        text-align: center;
+        color: #6c757d;
+    }
+
+    .btn-dark-toggle {
+        margin-left: 0.6rem;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <div class=" container-fluid">
+        <div class="row" id="navbar-container"></div>
+
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+                <div class="container mt-3">
+                    <h2>¿Quienes Somos?</h2>
+                    <div class="mt-4 p-5 bg-secondary text-white rounded">
+                        <h1>Conoce al equipo que hace posible el exito....</h1>
+                        <p>Somos estudiantes del primer semestre de la carrera de Ingenieria de Sistemas, dentro de la
+                            Universidad Boliviana de Informatia (UBI).
+                            Realizamos el presente proyecto para la feria con el objetivo de presentar el avance de
+                            nuestro conocimiento durante este periodo de aprendizaje
+                            gracias a nuetros esfuerzos con la ayuda de uestros docentes de tecnologia y programacion
+                            llevamos a cabo este proyecto que nos ayuda a revaluar el costo
+                            de un patrimonio inmueble del Gobierno MUnicipal de La Paz (GMLP).
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleTema() {
+                document.body.classList.toggle('dark-mode');
+                const btn = document.getElementById('darkToggle');
+                btn.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+            }
+        </script>
+</body>
+
+</html>
